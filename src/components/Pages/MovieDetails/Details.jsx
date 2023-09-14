@@ -1,4 +1,6 @@
 const Details = ({ data }) => {
+  const date = new Date().toUTCString(data)
+
   return (
     <div className='flex lg:space-y-5 lg:w-[40%] flex-col bg-gray-100 p-3 flex-auto'>
       <div className='w-full h-[55%]'>
@@ -18,9 +20,10 @@ const Details = ({ data }) => {
             <span data-testid='movie-title'>{data.title} </span><span className='font-bold mx-2 text-xl'>&#183;</span>
           </span>
           <span>
-            <span data-testid='release-date'>{data.release_date}</span>&#183;
+            <span data-testid='release-date'>{date}</span><span className='font-bold mx-2 text-xl'>&#183;</span>
+
           </span>
-          <div className=''></div>
+          <span className='' data-testid='movie-runtime'>{data.runtime}</span>
         </div>
         <div className='flex'>
           <div className='lg:w-[70%] font-medium text-gray-700 leading-wide text-normal font-gray-900'>

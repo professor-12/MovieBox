@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react'
 import { json, useLoaderData } from 'react-router-dom'
 import MovieItems from '../../MovieItems/MovieItems'
 import 'react-router-dom'
+import Error from  '../../ErrorComponents/Error'
 import Loading from './../../Loading/Loading'
 const MovieList = props => {
   const [loading, setLoading] = useState(true)
+  const [error,seterror] = useState(false)
   const [data, setData] = useState([])
   useEffect(() => {
     async function MovieListLoader () {
@@ -13,6 +15,7 @@ const MovieList = props => {
       )
 
       if (!getData.ok) {
+        seterror(true)
         throw json({ message: 'Something Went Wrong' }, { status: 500 })
       }
 
@@ -24,6 +27,10 @@ const MovieList = props => {
 
     MovieListLoader()
   }, [])
+
+  if (error) {
+    return <Error title='Could not Fetch data'>Something went wrong please ensure you connect to an internet</Error>
+  }
   return (
     <div className='w-[80%] mx-auto space-y-3'>
       <section className='flex justify-between items-center'>

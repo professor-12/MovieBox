@@ -23,7 +23,7 @@ const Card = props => {
             </div>
             <div className='flex space-x-2 font-sm text-gray-600 font-medium'>
               <img src={strawberry} alt="" />
-              <p>{props.vote_average * 10}%</p>
+              <p>{props.vote_average}%</p>
             </div>
           </div>
         </div>
