@@ -1,8 +1,5 @@
 import React from 'react'
-import Vector1 from '../../assets/Vector (1).svg'
-import Vector2 from '../../assets/Vector.svg'
-import Vector3 from '../../assets/Vector (3).svg'
-import Vector4 from '../../assets/Vector (4).svg'
+
 export const Footer = () => {
   return (
     <div className='flex flex-col space-y-6  justify-center p-12'>
