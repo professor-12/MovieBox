@@ -6,7 +6,9 @@ import Wrapper from './Wrapper/Wrapper'
 const Header = () => {
   return (
     <>
-      <Wrapper className={`text-white mx-auto h-[600px]   object-fill py-5`}>
+    <Wrapper className={`text-white mx-auto h-[600px]   object-fill py-5`}
+    style={}  
+      >
         <NavigationBar />
         <header className='w-[80%] mt-20 mx-auto space-y-6 '>
           <h1 className='flex text-center text-4xl lg:text-left flex-col space-y-1 lg:text-5xl lg:space-y-3'>
