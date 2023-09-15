@@ -1,9 +1,4 @@
 import React from 'react'
-import Menu from '../../../../assets/tv.svg'
-import Home from '../../../../assets/Home (1).svg'
-import Movie from '../../../../assets/Movie Projector.svg'
-import TvSeries from '../../../../assets/TV Show.svg'
-import UpComing from '../../../../assets/Calendar.svg'
 import LogoutIcon from '../../../../assets/Logout.svg'
 import { Link } from 'react-router-dom';
 
@@ -11,12 +6,12 @@ export const SideNavMenu = () => {
   return (
     <>
       <Link className='flex items-center lg:space-x-5 lg:px-12 lg:py-4'>
-        <img className='hidden lg:flex' src={Menu} alt='' />
+        <img className='hidden lg:flex' src="tv.svg" alt='' />
         <h1 className='font-semibold text-lg hidden lg:inline-block'>MovieBox</h1>
       </Link>
       <Link  to='/' className='flex items-center lg:space-x-5 lg:px-12 lg:py-4'>
           <span>
-            <img className='hidden lg:flex' src={Home} alt='' />
+            <img className='hidden lg:flex' src="Home (1).svg" alt='' />
           </span>
      
           <h1 className='text-zinc-500 font-medium'>Home</h1>
@@ -24,21 +19,21 @@ export const SideNavMenu = () => {
 
       <Link className='flex items-center lg:space-x-5  md:bg-[#BE123C] md:bg-opacity-[0.19] lg:px-12 lg:py-4 lg:border-r-4 border-r-[#BE123C]'>
         <span>
-          <img  className='hidden lg:flex' src={Movie} alt='' />
+          <img  className='hidden lg:flex' src="Movie Projector.svg" alt='' />
         </span>
         <h1 className='text-zinc-500 font-medium'>Movies</h1>
       </Link>
 
       <Link className='flex items-center lg:space-x-5 lg:px-12 lg:py-4'>
         <span>
-          <img  className='hidden lg:flex' src={TvSeries} alt='' />
+          <img  className='hidden lg:flex' src="Tv Show.svg" alt='' />
         </span>
         <h1 className='text-zinc-500 font-medium'>Tv Series</h1>
       </Link>
 
       <Link className='flex items-center lg:space-x-5 lg:px-12 lg:py-4'>
         <span>
-          <img  className='hidden lg:flex' src={UpComing} alt='' />
+          <img  className='hidden lg:flex' src="Calender.svg" alt='' />
         </span>
 
         <h1 className='text-zinc-500 font-medium'>Upcoming</h1>
@@ -52,7 +47,7 @@ export const SideNavMenu = () => {
       </Link>
       <Link className='flex items-center lg:space-x-5 lg:px-12 lg:py-4'>
         <span>
-          <img  className='hidden lg:flex' src={LogoutIcon} alt='' />
+          <img  className='hidden lg:flex' src="Logout.svg" alt='' />
         </span>
         <h1 className='text-zinc-500 font-medium'>Logout</h1>
       </Link>
