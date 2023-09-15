@@ -18,7 +18,7 @@ const Card = props => {
             <p>{props.vote_average}/ 100</p>
             </div>
             <div className='flex space-x-2 font-sm text-gray-600 font-medium'>
-              <img src="strawBerry.svg" alt="" />
+              <img src="assets/strawBerry.svg" alt="" />
               <p>{props.vote_average}%</p>
             </div>
           </div>
