@@ -1,5 +1,5 @@
 import React from 'react'
-import LogoutIcon from '../../../../assets/Logout.svg'
+
 import { Link } from 'react-router-dom';
 
 export const SideNavMenu = () => {
