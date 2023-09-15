@@ -1,18 +1,12 @@
 import React from 'react'
 import NavigationBar from './NavigationBar'
-import Poster from './assets/Poster (3).png'
-import Imdm from './assets/Imb.svg'
-import Strawberry from './assets/Strawberry.svg'
 import Button from '../UI/Button/Button'
 import Wrapper from './Wrapper/Wrapper'
 
 const Header = () => {
   return (
     <>
-      <Wrapper
-        className={`text-white mx-auto h-[600px]   object-fill py-5`}
-        style={{background: Poster}}
-      >
+      <Wrapper className={`text-white mx-auto h-[600px]   object-fill py-5`}>
         <NavigationBar />
         <header className='w-[80%] mt-20 mx-auto space-y-6 '>
           <h1 className='flex text-center text-4xl lg:text-left flex-col space-y-1 lg:text-5xl lg:space-y-3'>
@@ -21,11 +15,11 @@ const Header = () => {
           </h1>
           <div className='flex space-x-6 text-sm'>
             <div className='flex space-x-3 items-center'>
-              <img src={Imdm} alt='' />
+              <img src='imb.svg' alt='' />
               <p className='text-gray-200'> 86.0 / 100</p>
             </div>
             <div className='flex space-x-2 font-normal'>
-              <img src={Strawberry} alt='' />
+              <img src='Strawberry.svg' alt='' />
               <p>97%</p>
             </div>
           </div>
