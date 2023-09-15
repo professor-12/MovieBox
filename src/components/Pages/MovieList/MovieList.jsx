@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { json, useLoaderData } from 'react-router-dom'
+import { json } from 'react-router-dom'
 import MovieItems from '../../MovieItems/MovieItems'
 import 'react-router-dom'
 import Error from  '../../ErrorComponents/Error'
 import Loading from './../../Loading/Loading'
-const MovieList = props => {
+const MovieList = () => {
   const [loading, setLoading] = useState(true)
   const [error,seterror] = useState(false)
   const [data, setData] = useState([])
