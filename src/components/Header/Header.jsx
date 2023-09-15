@@ -1,8 +1,8 @@
 import React from 'react'
 import NavigationBar from './NavigationBar'
-import Poster from '../../assets/Poster (3).png'
-import Imdm from '../../assets/imb.svg'
-import Strawberry from '../../assets/Strawberry.svg'
+import Poster from './assets/Poster (3).png'
+import Imdm from './assets/Imb.svg'
+import Strawberry from './assets/Strawberry.svg'
 import Button from '../UI/Button/Button'
 import Wrapper from './Wrapper/Wrapper'
 

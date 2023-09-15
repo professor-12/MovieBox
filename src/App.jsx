@@ -1,4 +1,3 @@
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import './App.css'
 import MovieDetails from './components/Pages/MovieDetails/MovieDetails'
 import Root from './components/RootRoute.jsx/Root'

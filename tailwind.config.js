@@ -2,7 +2,9 @@
 export default {
   content: ["./src/**/*"],
   theme: {
-    extend: {},
+    extend: {
+
+    },
   },
   plugins: [],
 }
