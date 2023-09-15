@@ -15,7 +15,7 @@ const Header = () => {
           </h1>
           <div className='flex space-x-6 text-sm'>
             <div className='flex space-x-3 items-center'>
-              <img src='imb.svg' alt='' />
+              <img src='assets/imb.svg' alt='' />
               <p className='text-gray-200'> 86.0 / 100</p>
             </div>
             <div className='flex space-x-2 font-normal'>

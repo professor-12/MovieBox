@@ -6,12 +6,12 @@ export const SideNavMenu = () => {
   return (
     <>
       <Link className='flex items-center lg:space-x-5 lg:px-12 lg:py-4'>
-        <img className='hidden lg:flex' src="tv.svg" alt='' />
+        <img className='hidden lg:flex' src="./public/assets/tv.svg" alt='' />
         <h1 className='font-semibold text-lg hidden lg:inline-block'>MovieBox</h1>
       </Link>
       <Link  to='/' className='flex items-center lg:space-x-5 lg:px-12 lg:py-4'>
           <span>
-            <img className='hidden lg:flex' src="Home (1).svg" alt='' />
+            <img className='hidden lg:flex' src="./public/assets/Home (1).svg" alt='' />
           </span>
      
           <h1 className='text-zinc-500 font-medium'>Home</h1>
@@ -19,21 +19,21 @@ export const SideNavMenu = () => {
 
       <Link className='flex items-center lg:space-x-5  md:bg-[#BE123C] md:bg-opacity-[0.19] lg:px-12 lg:py-4 lg:border-r-4 border-r-[#BE123C]'>
         <span>
-          <img  className='hidden lg:flex' src="Movie Projector.svg" alt='' />
+          <img  className='hidden lg:flex' src="./public/assets/Movie Projector.svg" alt='' />
         </span>
         <h1 className='text-zinc-500 font-medium'>Movies</h1>
       </Link>
 
       <Link className='flex items-center lg:space-x-5 lg:px-12 lg:py-4'>
         <span>
-          <img  className='hidden lg:flex' src="Tv Show.svg" alt='' />
+          <img  className='hidden lg:flex' src="./public/assets/Tv Show.svg" alt='' />
         </span>
         <h1 className='text-zinc-500 font-medium'>Tv Series</h1>
       </Link>
 
       <Link className='flex items-center lg:space-x-5 lg:px-12 lg:py-4'>
         <span>
-          <img  className='hidden lg:flex' src="Calender.svg" alt='' />
+          <img  className='hidden lg:flex' src="./public/assets/Calender.svg" alt='' />
         </span>
 
         <h1 className='text-zinc-500 font-medium'>Upcoming</h1>
@@ -47,7 +47,7 @@ export const SideNavMenu = () => {
       </Link>
       <Link className='flex items-center lg:space-x-5 lg:px-12 lg:py-4'>
         <span>
-          <img  className='hidden lg:flex' src="Logout.svg" alt='' />
+          <img  className='hidden lg:flex' src="./public/assets/Logout.svg" alt='' />
         </span>
         <h1 className='text-zinc-500 font-medium'>Logout</h1>
       </Link>
