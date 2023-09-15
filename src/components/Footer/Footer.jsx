@@ -6,8 +6,8 @@ export const Footer = () => {
       <div className='flex space-x-8 justify-center'>
         <img src="./Vector.svg" alt='' />
         <img src='./vector (1).svg' alt='' />
-        <img src="./Vector (3).svg" alt='' />
-        <img src='./Vector (4).svg' alt='' />
+        <img src="public/assets/Vector (3).svg" alt='' />
+        <img src='public/assets/Vector (4).svg' alt='' />
       
       </div>
       <div className='space-y-6 flex flex-col text-center '>
