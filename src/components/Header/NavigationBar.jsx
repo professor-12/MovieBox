@@ -14,7 +14,7 @@ const NavigationBar = () => {
     </div>
     <div className='flex hidden lg:flex items-center space-x-4'>
         <h1 className='font-semibold text-normal'>Sign in</h1>
-        <img src="assets/Menu (4).svg" alt="" />
+        <img src="assets/Menu(4).svg" alt="" />
     </div>
     </div>
   )
