@@ -7,10 +7,10 @@ export const Footer = () => {
   return (
     <div className='flex flex-col space-y-6  justify-center p-12'>
       <div className='flex space-x-8 justify-center'>
-        <img src={Vector2} alt='' />
-        <img src={Vector1} alt='' />
-        <img src={Vector3} alt='' />
-        <img src={Vector4} alt='' />
+        <img src="Vector.svg" alt='' />
+        <img src='vector (1).svg' alt='' />
+        <img src="Vector (3).svg" alt='' />
+        <img src='Vector (4).svg' alt='' />
       </div>
       <div className='space-y-6 flex flex-col text-center '>
         <div className='flex md:space-x-8 flex-col md:flex-row  justify-center font-medium '>
