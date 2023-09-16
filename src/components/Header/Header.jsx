@@ -19,7 +19,7 @@ const Header = () => {
               <p className='text-gray-200'> 86.0 / 100</p>
             </div>
             <div className='flex space-x-2 font-normal'>
-              <img src='./public/assets/Strawberry.svg' alt='' />
+              <img src='assets/Strawberry.svg' alt='' />
               <p>97%</p>
             </div>
           </div>

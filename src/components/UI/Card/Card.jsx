@@ -18,8 +18,8 @@ const Card = props => {
             <div className='flex space-x-2 text-sm text-gray-600 font-medium items-center'><img src="public/assets/Imb.svg" alt="" />
             <p>{props.vote_average}/ 100</p>
             </div>
-            <div className='flex space-x-2 text-sm text-slate-600 font-medium'>
-              <img src="public/assets/strawBerry.svg" alt="" />
+            <div className='flex space-x-2 font-sm text-gray-600 font-medium'>
+              <img src="strawBerry.svg" alt="" />
               <p>{props.vote_average}%</p>
             </div>
           </div>

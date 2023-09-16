@@ -4,10 +4,10 @@ export const Footer = () => {
   return (
     <div className='flex flex-col space-y-6  justify-center p-12'>
       <div className='flex space-x-8 justify-center'>
-        <img src="./Vector.svg" alt='' />
-        <img src='./vector (1).svg' alt='' />
-        <img src="public/assets/Vector (3).svg" alt='' />
-        <img src='public/assets/Vector (4).svg' alt='' />
+        <img src="assets/Vector.svg" alt='' />
+        <img src='assets/vector (1).svg' alt='' />
+        <img src="assets/Vector (3).svg" alt='' />
+        <img src='assets/Vector (4).svg' alt='' />
       
       </div>
       <div className='space-y-6 flex flex-col text-center '>
