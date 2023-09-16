@@ -1,21 +1,29 @@
 import './App.css'
-import MovieDetails from './components/Pages/MovieDetails/MovieDetails'
+import MovieDetails, { MovieDetailsLoader } from './components/Pages/MovieDetails/MovieDetails'
 import Root from './components/RootRoute.jsx/Root'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import MovieList from './components/Pages/MovieList/MovieList'
+import {  RouterProvider } from 'react-router-dom'
+import MovieList ,{ MovieListLoader } from './components/Pages/MovieList/MovieList'
+import { createBrowserRouter } from 'react-router-dom'
 
 function App () {
+
+
+  const Routes = createBrowserRouter([
+    {
+      path: '/',
+      element: <Root />,
+      children: [{ index:true, element: <MovieList />, loader: MovieListLoader }]
+    },
+    {
+      path: 'movies/:id',
+      element: <MovieDetails />,
+      loader:MovieDetailsLoader
+    }
+  ])
+
   return (
     <div className='mx-auto space-y-12'>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Root></Root>}>
-            <Route path='' element={<MovieList />}></Route>
-          </Route>
-          <Route path='movies/:id' element={<MovieDetails />}></Route>
-          
-        </Routes>
-      </BrowserRouter>
+      <RouterProvider router={Routes}/>
     </div>
   )
 }

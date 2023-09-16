@@ -1,36 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 import { json } from 'react-router-dom'
 import MovieItems from '../../MovieItems/MovieItems'
 import 'react-router-dom'
-import Error from  '../../ErrorComponents/Error'
-import Loading from './../../Loading/Loading'
+import { useLoaderData } from 'react-router-dom'
+
 const MovieList = () => {
-  const [loading, setLoading] = useState(true)
-  const [error,seterror] = useState(false)
-  const [data, setData] = useState([])
-  useEffect(() => {
-    async function MovieListLoader () {
-      const getData = await fetch(
-        'https://api.themoviedb.org/3/movie/top_rated?api_key=8fe7220e6d3637abfa702faa23b88cc3'
-      )
+  const Data = useLoaderData()
+  
+ 
 
-      if (!getData.ok) {
-        seterror(true)
-        throw json({ message: 'Something Went Wrong' }, { status: 500 })
-      }
-
-      const response = await getData.json()
-
-      setData(response)
-      setLoading(false)
-    }
-
-    MovieListLoader()
-  }, [])
-
-  if (error) {
-    return <Error title='Could not Fetch data'>Something went wrong please ensure you connect to an internet</Error>
-  }
   return (
     <div className='w-[80%] mx-auto space-y-3'>
       <section className='flex justify-between items-center'>
@@ -41,9 +19,24 @@ const MovieList = () => {
       </section>
 
       <section>
-        {loading ? <Loading /> : <MovieItems data={data.results} />}
+         <MovieItems data={Data.results} />
       </section>
     </div>
   )
 }
 export default MovieList
+
+export async function MovieListLoader () {
+  const getData = await fetch(
+    'https://api.themoviedb.org/3/movie/top_rated?api_key=8fe7220e6d3637abfa702faa23b88cc3'
+  )
+
+  if (!getData.ok) {
+    seterror(true)
+    return json({ message: 'Something Went Wrong' }, { status: 500 })
+  }
+
+
+  return getData;
+
+}
