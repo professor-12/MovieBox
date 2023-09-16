@@ -10,11 +10,11 @@ const MovieList = () => {
  
 
   return (
-    <div className='w-[80%] mx-auto space-y-3'>
+    <div className='w-[80%] mx-auto space-y-5'>
       <section className='flex justify-between items-center'>
-        <h1 className='text-4xl font-semibold'>Featured Movie</h1>
+        <h1 className='md:text-4xl text-2xl font-semibold'>Featured Movie</h1>
         <p className='text-[#BE123C] font-semibold'>
-          See More <span></span>
+          See  <span className='text-[#c14060]'>More</span>
         </p>
       </section>
 

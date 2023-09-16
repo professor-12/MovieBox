@@ -12,7 +12,7 @@ const Root = () => {
   console.log(isLoading)
   return (
     <div className=''>
-      <div className='space-y-7'>
+      <div className='space-y-10'>
         <Header/>
        {isLoading ? <Loading/> : <Outlet/> }
         <Footer/>
