@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 const Card = props => {
   return (
     <Link  to={`movies/${props.id}`}>
-      <div data-testid='movie-card' className='card border md:h-[30rem] hover:scale-105 duration-150 group hover:shadow-lg hover:shadow-black bg-white shadow shadow-slate-400 rounded-lg space-y-2 z-100'>
+      <div data-testid='movie-card' className='card h-[20rem] border md:h-[30rem] hover:scale-105 duration-150 group hover:shadow-lg hover:shadow-black bg-white shadow shadow-slate-400 rounded-lg space-y-2 z-100'>
         <img
           data-testid='movie-poster'
-          className='object-cover group-[]:bg-black rounded-t-lg'
+          className='object-cover h-[30%] md:h-auto  w-full group-[]:bg-black rounded-t-lg'
           src={`https://image.tmdb.org/t/p/w500/${props.img}`}
           alt='movie_poster'
         />

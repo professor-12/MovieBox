@@ -5,7 +5,7 @@ const MovieItems = props => {
   return (
     <>
       <div className='grid xl:grid-cols-6 lg:grid-cols-5  gap-y-5  gap-x-5 md:grid-cols-3 sm:grid-cols-2'>
-        {props.data.slice(0,10).map(item => (
+        {props.data.map(item => (
           <Card
             key={item.id}
             vote_average={item.vote_average * 10}

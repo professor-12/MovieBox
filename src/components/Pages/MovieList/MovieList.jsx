@@ -28,13 +28,14 @@ export default MovieList
 
 export async function MovieListLoader () {
   const getData = await fetch(
-    'https://api.themoviedb.org/3/movie/top_rated?api_key=8fe7220e6d3637abfa702faa23b88cc3'
+    'https://api.themoviedb.org/3/movie/popular?api_key=8fe7220e6d3637abfa702faa23b88cc3'
   )
 
   if (!getData.ok) {
     seterror(true)
     return json({ message: 'Something Went Wrong' }, { status: 500 })
   }
+
 
 
   return getData;
